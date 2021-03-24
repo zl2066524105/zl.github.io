@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>更新用户密码</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h2><a id="_1"></a>更新用户密码</h2>
+<p><strong>接口地址</strong> <code>/admin/pass</code></p>
+<p><strong>请求方式</strong> <code>PUT</code></p>
+<p><strong>consumes</strong> <code>["application/json"]</code></p>
+<p><strong>请求参数</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>参数说明</th>
+<th>请求类型</th>
+<th>是否必须</th>
+<th>数据类型</th>
+<th>schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>oldPass</td>
+<td>旧密码</td>
+<td>body</td>
+<td>true</td>
+<td>object</td>
+<td></td>
+</tr>
+<tr>
+<td>pass</td>
+<td>新密码</td>
+<td>body</td>
+<td>true</td>
+<td>object</td>
+<td></td>
+</tr>
+<tr>
+<td>adminId</td>
+<td>id</td>
+<td>body</td>
+<td>true</td>
+<td>object</td>
+<td></td>
+</tr>
+</tbody>
+</table><p><strong>请求示例</strong></p>
+<pre><code class="prism language-json"><span class="token punctuation">{</span>
+	<span class="token string">"adminId"</span><span class="token punctuation">:</span> <span class="token punctuation">,</span>
+	<span class="token string">"oldPass"</span><span class="token punctuation">:</span><span class="token string">""</span><span class="token punctuation">,</span>
+	<span class="token string">"pass"</span><span class="token punctuation">:</span><span class="token string">""</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><strong>响应参数</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>参数名称</th>
+<th>参数说明</th>
+<th>类型</th>
+<th>schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>code</td>
+<td></td>
+<td>integer(int64)</td>
+<td>integer(int64)</td>
+</tr>
+<tr>
+<td>message</td>
+<td></td>
+<td>string</td>
+<td></td>
+</tr>
+<tr>
+<td>obj</td>
+<td></td>
+<td>object</td>
+<td></td>
+</tr>
+</tbody>
+</table><p><strong>响应示例</strong></p>
+<pre><code class="prism language-json"><span class="token punctuation">{</span>
+	<span class="token string">"code"</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token string">"message"</span><span class="token punctuation">:</span> <span class="token string">""</span><span class="token punctuation">,</span>
+	<span class="token string">"obj"</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</div>
+</body>
+
+</html>
