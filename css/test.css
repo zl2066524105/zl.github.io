@@ -215,18 +215,16 @@ a{
 }
 
 #footer {
-    height: 320px;
+    height: 400px;
     width: 80%;
     background-color: #66ccff;
 }
 #footer #left{
-
     float: left;
     width: 50%;
     clear: left;
 }
 #footer #right{
-
     float: right;
     width: 40%;
     clear: right;
