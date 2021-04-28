@@ -16,7 +16,7 @@ a{
 }
 #nav ul li{
     line-height: 80px;
-    width: 120px;
+    width: 100px;
     list-style: none;
     float: left;
     display: block;
@@ -67,7 +67,7 @@ a{
     border: black 1px solid;
     border-radius: 50%;
     margin-top: 20px;
-    margin-right: 30px;
+    margin-right: 10px;
     display:block;
     float: right;
     text-align: center;
