@@ -1,137 +1,194 @@
 <!DOCTYPE html>
-<html lang="ch">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" content="个人简历" name="keywords">
-    <meta name="referrer" content="never">
-    <title>个人简历</title>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/test.css" rel="stylesheet">
 </head>
-<body bgcolor="#fafad2">
-<h2>个人信息</h2>
-<div>
-    <section>
-        <table align="left" bgcolor="#00bfff" border="1" cellspacing="0" height="300" width="1000">
-            <caption style="font-size: x-large"><strong style="color: red">个人简历</strong></caption>
-            <tbody>
-            <tr>
-                <th>姓名:</th>
-                <td>朱亮</td>
-                <th>年龄:</th>
-                <td>19</td>
-                <th>性别:</th>
-                <td>男</td>
-                <td rowspan="3" align="center"><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180119%2F1a5cf02c82414ae8a5a016468a40b56e.gif&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1619165988&t=c6e809bd7319c66febe74937bad94dd2" alt="照片找不到了" title="个人照片" height="200"></td>
-            </tr>
-            <tr>
-                <th>出生日期:</th>
-                <td>2002-10-30</td>
-                <th>政治面貌:</th>
-                <td>共青团员</td>
-                <th>学历:</th>
-                <td>本科在读生</td>
-            </tr>
-            <tr>
-                <th>专业:</th>
-                <td>软件工程</td>
-                <th>在读学校:</th>
-                <td>杭州电子科技大学</td>
-                <th>学号:</th>
-                <td>20051536</td>
-            </tr>
-            <tr>
-                <th>年级:</th>
-                <td>大一</td>
-                <th>籍贯:</th>
-                <td>重庆(渝)</td>
-                <th>邮箱:</th>
-                <td>31724404512@qq.com</td>
-                <th>英语等级水平:</th>
-                <td>CET-4</td>
-            </tr>
-            </tbody>
-
-        </table>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </section>
-    <hr>
-    <section>
-        <h2><p>个人介绍</p></h2>
-        <h3>运动爱好</h3>
-        <ul>
-            <li>足球</li>
-            <li>篮球</li>
-            <li>羽毛球</li>
-            <li>乒乓球</li>
-        </ul>
-        <h3>个人领域技能点</h3>
-        <ul>
-            <li>
-                <strong>会一点后端</strong>
-                <progress max="100" value="10"></progress>
-                </span>
-            </li>
-            <li>
-                <strong>会一点安卓</strong>
-                <progress max="100" value="10"></progress>
-            </li>
-            <li>
-                <strong>会一点游戏制作</strong>
-                <progress max="100" value="10"></progress>
-            </li>
-            <li>
-                <strong>会一点MySql</strong>
-                <progress max="100" value="10"></progress>
-            </li>
-        </ul>
-        <h3>个人编程语言技能点</h3>
-        <ul>
-            <li>
-                <strong>java</strong>
-                <progress max="100" value="30"></progress>
-            </li>
-            <li>
-                <strong>golang</strong>
-                <progress max="100" value="40"></progress>
-            </li>
-            <li>
-                <strong>C</strong>
-                <progress max="100" value="50"></progress>
-            </li>
-            <li>
-                <strong>HTML</strong>
-                <progress max="100" value="30"></progress>
-            </li>
-            <li>
-                <strong>CSS</strong>
-                <progress max="100" value="20"></progress>
-            </li>
-            <li>
-                <strong>JavaScript</strong>
-                <progress max="100" value="10"></progress>
-            </li>
-        </ul>
-    </section>
-    <hr>
-    <section>
-        <h2>个人总结</h2>
-        <textarea cols="10" rows="10" style="width:500px">
-
-    目前希望把前端学好，想做个全栈工程师，日后也想往架构师方向发展。感觉自己都会一点，但又都不会。
-        </textarea>
-    </section>
+<body>
+<div id="nav">
+    <ul>
+        <li><img alt="" id="logo" src="./img/logo.png"></li>
+        <li><a href="#">江南展</a></li>
+        <li><a href="#">城市风景</a>
+            <ul>
+                <li><a href="#">杭州</a></li>
+                <li><a href="#">苏州</a></li>
+                <li><a href="#">宁波</a></li>
+                <li><a href="#">上海</a></li>
+                <li><a href="#">南京</a></li>
+            </ul>
+        </li>
+        <li><a href="#">热门景点</a>
+            <ul>
+                <li><a href="LOGO.html">西湖</a></li>
+                <li><a href="#">灵隐寺</a></li>
+                <li><a href="#">宋城</a></li>
+                <li><a href="#">千岛湖</a></li>
+                <li><a href="#">钱塘江</a></li>
+            </ul>
+        </li>
+        <li><a href="#">古韵古镇</a>
+            <ul>
+                <li><a href="#">周庄</a></li>
+                <li><a href="#">同里古镇</a></li>
+                <li><a href="#">西塘</a></li>
+                <li><a href="#">乌镇</a></li>
+                <li><a href="#">南浔</a></li>
+            </ul>
+        </li>
+        <li><a href="#">人文风景</a>
+            <ul>
+                <li><a href="#">现代服装</a></li>
+                <li><a href="#">唐服</a></li>
+                <li><a href="#">汉服</a></li>
+                <li><a href="#">质朴玩童</a></li>
+                <li><a href="#">古稀老人</a></li>
+            </ul>
+        </li>
+        <li><a href="#">关于本站</a></li>
+    </ul>
+    <div id="icon-list">
+        <li><a href="#"><img alt="" src="./img/联系我们%20(1).png" title="联系我们"></a></li>
+        <li><a href="#"><img src="./img/个人中心.png" title="个人中心"></a></li>
+        <li><a href="#"><img src="./img/个人中心%20(1).png" title="头像"></a></li>
+        <li><a href="#"><img src="./img/分享网站图标.png" title="分享"></a></li>
+    </div>
 </div>
-<hr>
-<div>
-    <h2>嵌入的代码</h2>
-    <pre>
-    <code>
-        #include&lt;stdio.h&gt;
-        int main(){
-            printf("hello web!");
-            return 0;
-        }
-    </code>
-</pre>
+<p><img alt="" height="400px" src="./img/12.jpeg" width="80%"></p>
+<div id="search">
+    <input id="search_text" name="search_text" placeholder="请使用尽量准确的关键词" type="text">
+    <input id="search_button" name="search" type="submit" value="搜索">
+    <a href="login.html"><input id="search_button1" name="search" type="submit" value="登录"></a>
 </div>
-
+<div id="tuijian">
+    <ul class="menu">
+        <li><a href="#">最新</a></li>
+        <li><a href="#">人气</a></li>
+        <li><a href="#">点击</a></li>
+        <li><a href="#">评论量</a></li>
+    </ul>
+</div>
+<div id="main">
+    <ul id="box">
+        <li>
+            <a href="#">
+                <img class="preview" src="./img/1.jpeg">
+                <img src="./img/1.jpeg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img class="preview" src="./img/2.jpeg">
+                <img src="./img/2.jpeg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img class="preview" src="./img/3.jpeg">
+                <img src="./img/3.jpeg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img class="preview" src="./img/4.jpeg">
+                <img src="./img/4.jpeg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img class="preview" src="./img/5.jpeg">
+                <img src="./img/5.jpeg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img class="preview" src="./img/6.jpeg">
+                <img src="./img/6.jpeg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img class="preview" src="./img/7.jpeg">
+                <img src="./img/7.jpeg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img class="preview" src="./img/8.jpeg">
+                <img src="./img/8.jpeg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img class="preview" src="./img/9.jpeg">
+                <img src="./img/9.jpeg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img class="preview" src="./img/10.jpeg">
+                <img src="./img/10.jpeg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img class="preview" src="./img/8.jpeg">
+                <img src="./img/8.jpeg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img class="preview" src="./img/8.jpeg">
+                <img src="./img/8.jpeg">
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="pagecent">
+    <a class="handle" href="#">&lt;</a>
+    <a class="on" href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">...</a>
+    <a class="handle" href="#">&gt;</a>
+</div>
+<div id="footer">
+    <div id="left">
+        <h1>江南展</h1>
+        <p>
+            江南展是一个收集江浙沪地区的各种风景照（包括但不限于城市风景、热门景点的风景和人文照、具有古风和古韵的江南古镇的摄影），并将其展示给用户，是一个收集和展示的平台，本站使用html+css+JavaScript来构成，未采用任何框架和后端服务。用户可以注册登录本站，参与评论和评价，上传相关照片来完善本站，同时也可以下载本站图片。本站的图片均是从网上下载过来的，不涉及任何商业活动，如有侵权，请及时联系我们。 </p>
+    </div>
+    <div align="center" id="right">
+        <p>
+            <a href="#">首页</a>-<a href="#" target="_blank">关于我们</a>-<a href="#" target="_blank">联系我们</a>-<a href="#"
+                                                                                                            target="_blank">分享我们</a>
+        </p>
+        <p><span>QQ：3172440451</span></p>
+        <p>Copyright &copy;2015-2021 cger.com all right reserved.</p>
+        <a href="https://beian.miit.gov.cn" target="_blank">苏ICP备20027715号-1</a> 数据库查询次数：7
+    </div>
+</div>
+<div id="shangxia2">
+  <span id="gotop1">
+    <img alt="返回顶部小火箭" src="img/huojian.svg">
+  </span>
+</div>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="https://cdn.bootcss.com/gsap/1.19.0/TweenMax.min.js"></script>
+<script src="https://cdn.bootcss.com/gsap/1.19.0/plugins/ScrollToPlugin.min.js"></script>
+<script type="text/javascript">
+    $("#gotop1").click(function(e) {
+        TweenMax.to(window, 1.5, {scrollTo:0, ease: Expo.easeInOut});
+        var huojian = new TimelineLite();
+        huojian.to("#gotop1", 1, {rotationY:720, scale:0.6, y:"+=40", ease:  Power4.easeOut})
+            .to("#gotop1", 1, {y:-1000, opacity:0, ease:  Power4.easeOut}, 0.6)
+            .to("#gotop1", 1, {y:0, rotationY:0, opacity:1, scale:1, ease: Expo.easeOut, clearProps: "all"}, "1.4");
+    });
+</script>
 </body>
 </html>
