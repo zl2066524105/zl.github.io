@@ -11,32 +11,34 @@
     <form>
         <label>
             新用户名:
-            <input class="put" required type="text">
+            <input class="put" required type="text" size="25" placeholder="请输入新用户名">
         </label>
         <br><br>
         <label>
-            邮箱:
-            <input class="put" required type="email">
+            邮&nbsp;&nbsp;&nbsp;&nbsp;箱:
+            <input class="put" required type="email" size="25" placeholder="请输入有效的邮箱">
         </label>
         <br><br>
         <label>
-            新密码:
-            <input class="put" required type="password">
+            新密码&nbsp;&nbsp;:
+            <input class="put" required type="password" size="25" placeholder="请输入新密码">
         </label>
         <br><br>
         <label>
-            再次确认密码:
-            <input class="put" required type="password">
+            确认密码:
+            <input class="put" required type="password" size="25" placeholder="请再次确认你的密码">
         </label>
         <br><br>
         <label>
-            验证码:
-            <input class="put" required type="text">
+            验证码&nbsp;&nbsp;:
+            <input class="put" required type="text" size="25" placeholder="请输入验证码">
         </label>
         <br><br>
-        <a href="#"><input id="register" name="register" type="button" value="发送验证码"></a>
+        <!--        <a href="#"><input id="register" name="register" type="button" value="发送验证码"></a>-->
+        <button id="register">发送验证码</button>
         <input id="login" name="login" type="submit" value="注册">
     </form>
 </div>
+<script src="js/jquery-1.11.0.min.js"></script>
 </body>
 </html>
