@@ -51,14 +51,14 @@
     </ul>
     <div id="icon-list">
         <li><a href="#"><img alt="" src="./img/联系我们%20(1).png" title="联系我们"></a></li>
-        <li><a href="#"><img src="./img/个人中心.png" title="个人中心"></a></li>
-        <li><a href="#"><img src="./img/个人中心%20(1).png" title="头像"></a></li>
-        <li><a href="#"><img src="./img/分享网站图标.png" title="分享"></a></li>
+        <li><a href="#"><img alt="" src="./img/个人中心.png" title="个人中心"></a></li>
+        <li><a href="#"><img alt="" src="./img/个人中心%20(1).png" title="头像"></a></li>
+        <li><a href="#"><img alt="" src="./img/分享网站图标.png" title="分享"></a></li>
     </div>
 </div>
 <p><img alt="" height="400px" src="./img/12.jpeg" width="80%"></p>
 <div id="search">
-    <input id="search_text" name="search_text" placeholder="请使用尽量准确的关键词" type="text">
+    <label for="search_text"></label><input id="search_text" name="search_text" placeholder="请使用尽量准确的关键词" type="text">
     <input id="search_button" name="search" type="submit" value="搜索">
     <a href="login.html"><input id="search_button1" name="search" type="submit" value="登录"></a>
 </div>
@@ -68,80 +68,82 @@
         <li><a href="#">人气</a></li>
         <li><a href="#">点击</a></li>
         <li><a href="#">评论量</a></li>
+        <li class="add_delete"><a href="#" id="add" onclick="addPicture();">添加图片</a></li>
+        <li class="add_delete"><a href="#" id="delete" onclick="deletePicture();">删除图片</a></li>
     </ul>
 </div>
 <div id="main">
     <ul id="box">
         <li>
             <a href="#">
-                <img class="preview" src="./img/1.jpeg">
-                <img src="./img/1.jpeg">
+                <img alt="" class="preview" src="./img/1.jpeg">
+                <img alt="" src="./img/1.jpeg">
             </a>
         </li>
         <li>
             <a href="#">
-                <img class="preview" src="./img/2.jpeg">
-                <img src="./img/2.jpeg">
+                <img alt="" class="preview" src="./img/2.jpeg">
+                <img alt="" src="./img/2.jpeg">
             </a>
         </li>
         <li>
             <a href="#">
-                <img class="preview" src="./img/3.jpeg">
-                <img src="./img/3.jpeg">
+                <img alt="" class="preview" src="./img/3.jpeg">
+                <img alt="" src="./img/3.jpeg">
             </a>
         </li>
         <li>
             <a href="#">
-                <img class="preview" src="./img/4.jpeg">
-                <img src="./img/4.jpeg">
+                <img alt="" class="preview" src="./img/4.jpeg">
+                <img alt="" src="./img/4.jpeg">
             </a>
         </li>
         <li>
             <a href="#">
-                <img class="preview" src="./img/5.jpeg">
-                <img src="./img/5.jpeg">
+                <img alt="" class="preview" src="./img/5.jpeg">
+                <img alt="" src="./img/5.jpeg">
             </a>
         </li>
         <li>
             <a href="#">
-                <img class="preview" src="./img/6.jpeg">
-                <img src="./img/6.jpeg">
+                <img alt="" class="preview" src="./img/6.jpeg">
+                <img alt="" src="./img/6.jpeg">
             </a>
         </li>
         <li>
             <a href="#">
-                <img class="preview" src="./img/7.jpeg">
-                <img src="./img/7.jpeg">
+                <img alt="" class="preview" src="./img/7.jpeg">
+                <img alt="" src="./img/7.jpeg">
             </a>
         </li>
         <li>
             <a href="#">
-                <img class="preview" src="./img/8.jpeg">
-                <img src="./img/8.jpeg">
+                <img alt="" class="preview" src="./img/8.jpeg">
+                <img alt="" src="./img/8.jpeg">
             </a>
         </li>
         <li>
             <a href="#">
-                <img class="preview" src="./img/9.jpeg">
-                <img src="./img/9.jpeg">
+                <img alt="" class="preview" src="./img/9.jpeg">
+                <img alt="" src="./img/9.jpeg">
             </a>
         </li>
         <li>
             <a href="#">
-                <img class="preview" src="./img/10.jpeg">
-                <img src="./img/10.jpeg">
+                <img alt="" class="preview" src="./img/10.jpeg">
+                <img alt="" src="./img/10.jpeg">
             </a>
         </li>
         <li>
             <a href="#">
-                <img class="preview" src="./img/8.jpeg">
-                <img src="./img/8.jpeg">
+                <img alt="" class="preview" src="./img/11.jpeg">
+                <img alt="" src="./img/11.jpeg">
             </a>
         </li>
         <li>
             <a href="#">
-                <img class="preview" src="./img/8.jpeg">
-                <img src="./img/8.jpeg">
+                <img alt="" class="preview" src="./img/12.jpeg">
+                <img alt="" src="./img/12.jpeg">
             </a>
         </li>
     </ul>
@@ -183,16 +185,24 @@
 <script src="https://cdn.bootcss.com/gsap/1.19.0/plugins/ScrollToPlugin.min.js"></script>
 <script type="text/javascript">
     /* 选择你喜欢的速度类型，复制下面的某段代码即可。不明处请咨询：qpjk.cc */
-    $(function() {
+    $(function () {
 
         // 默认速度
-        $("#gotop1").click(function() {
-            TweenMax.to(window, 1, {scrollTo:0});
+        $("#gotop1").click(function () {
+            TweenMax.to(window, 1, {scrollTo: 0});
         });
 
 
-
     });
+
+    function addPicture() {
+        $('#box').append("<li>" + "<a href='#'>" + "<img class='preview' src='./img/8.jpeg' alt=''>" + "<img src='./img/8.jpeg' alt=''>" + "</a>" + "</li>");
+    }
+
+    function deletePicture() {
+        $('#box').children('li').last().remove();
+    }
+
 </script>
 </body>
 </html>
