@@ -73,14 +73,29 @@ a {
     margin-left: 70%;
     text-align: center;
 }
-
+#icon-list #icon-msg{
+    font-size: 1px;
+    margin-right: 110px;
+    color: dodgerblue;
+}
+#icon-list #icon-msg #icon-msg-1{
+    margin-right: 10px;
+}
+#icon-list #icon-msg #icon-msg-2{
+    margin-right: 15px;
+}
+#icon-list #icon-msg #icon-msg-3{
+    margin-right: 30px;
+}
+#icon-list #icon-msg #icon-msg-4{
+    margin-right: 20px;
+}
 #icon-list li {
     background-color: deepskyblue;
     height: 50px;
     width: 50px;
     border: black 1px solid;
     border-radius: 50%;
-    margin-top: 20px;
     margin-right: 10px;
     display: block;
     float: left;
@@ -91,7 +106,10 @@ a {
     width: 100%;
     height: 100%;
 }
-
+#logout{
+    background-color: deepskyblue;
+    line-height: 40px;
+}
 #search {
     width: 80%;
     height: 80px;
